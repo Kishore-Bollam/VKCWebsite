@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- external file references -->
+    <link rel="stylesheet" href="../Css/Bootstrap/Bootsrap.css">
+    <script type="text/javascript" src="../Css/Bootstrap/Bootstrap.js"></script>
+    <!-- user created files -->
+    <link rel="stylesheet" href="../Registration/Registration.css">
+    <script type="text/javascript" src="../Registration/Registration.js"></script>
+
+</head>
+<body>
+    <div>
+        <form action="" class="m-5" autocomplete="off">
+            <h2>REGISTARION FORM</h2>
+            <!-- username -->
+            <div class="form-group p-2">
+                <label for="">USER NAME <sup class="text-danger">*</sup></label>
+                <input type="text" class="form-control" id="username" onkeyup="validateUserName()">
+                <div class="text-danger d-none" id="usernameErr">User Name is Required!</div>
+                <div class="text-danger d-none" id="usernameLengthErr">User Name Min 3 Char's && Max 10 Char's Only!</div>
+
+            </div>
+            <!-- email -->
+            <div class="form-group p-2">
+                <label for="">EMAIL<sup class="text-danger">*</sup></label>
+                <input type="text" class="form-control" id="email" onkeyup="validateEmail()">
+                <div class="text-danger d-none" id="emailErr">Email is Required!</div>
+                <div class="text-danger d-none" id="emailFormatErr">Enter valid Email Format!</div>
+
+
+            </div>
+            <!-- password -->
+            <div class="form-group  p-2">
+                <label for="">PASSWORD <sup class="text-danger">*</sup></label>
+                <input type="password" class="form-control" id="password" onkeyup="validatePassword()">
+                <div class="text-danger d-none" id="passwordErr">Password is Required!</div>
+                <div class="text-danger d-none" id="passwordLengthErr">Password Should be >=8 Characters!</div>
+
+
+            </div>
+            <!-- confirm password -->
+            <div class="form-group p-2">
+                <label for="">CONFIRM PASSWORD <sup class="text-danger">*</sup></label>
+                <input type="password" class="form-control" id="confirmPassword" onkeyup="validatePasswordAndConfirmPasswordMatched()">
+                <div class="text-danger d-none" id="confirmPasswordErr"> Password && Confirm Password Must be Same!</div>
+
+            </div>
+            <!-- buttons  -->
+            <div class="m-2 p-3"> 
+                <!-- submit/save button -->
+                <input type="button" value="Submit" class="btn btn-primary" onclick="validateRegistrationform()"> &nbsp;&nbsp;
+                <!-- reset/cancel button -->
+                <input type="reset" value="Reset" class="btn btn-danger">
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>

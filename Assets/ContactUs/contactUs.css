@@ -1,0 +1,11 @@
+h1{
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+a{
+    font-size: 20px;
+    color: black;
+}
